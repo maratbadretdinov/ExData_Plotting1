@@ -15,7 +15,7 @@ par(mfcol=c(2,2))
 par(ps=12)
 
 # plot 1
-plot(data$Date.Time, data$Global_active_power, main="", xlab="", ylab="Global active power", type="s")
+plot(data$Date.Time, data$Global_active_power, main="", xlab="", ylab="Global Active Power", type="s")
 
 # plot 2
 plot(data$Date.Time, data$Sub_metering_1, main="", xlab="", ylab="Energy sub metering", type="s")
@@ -28,7 +28,7 @@ legend("topright", legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_
 plot(data$Date.Time, data$Voltage, main="", xlab="datetime", ylab="Voltage", type="s")
 
 # plot 4
-plot(data$Date.Time, data$Global_reactive_power, main="", xlab="datetime", ylab="Global reactive power", type="s")
+plot(data$Date.Time, data$Global_reactive_power, main="", xlab="datetime", ylab="Global_reactive_power", type="s")
 
 # copy plot from screen device to png
 dev.copy(png, filename="plot4.png")
